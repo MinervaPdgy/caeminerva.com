@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sección Académica – CAE Minerva | Clases Particulares Oviedo, Universidad de Oviedo, EPI Gijón</title>
+<meta name="description" content="Clases particulares y refuerzo escolar en Oviedo para Primaria, ESO, Bachillerato y Universidad. Especializados en Universidad de Oviedo y EPI Gijón. Técnicas de estudio y oposiciones.">
+<link rel="canonical" href="https://caeminerva.es/academica">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"CAE Minerva – Sección Académica","url":"https://caeminerva.es/academica","telephone":"+34614122220","address":{"@type":"PostalAddress","streetAddress":"Calle Quintana 15, 1º Oficina 1","addressLocality":"Oviedo","addressRegion":"Asturias","postalCode":"33009","addressCountry":"ES"},"description":"Clases particulares en Oviedo para todas las etapas educativas. Especialistas en Universidad de Oviedo, EPI Gijón, Bachillerato y preparación EBAU Asturias."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --cream:#f5f0e8;--cream-dark:#ede6d8;--cream-deep:#e0d8c8;
+  --navy:#1c1f5a;--navy-mid:#252875;--navy-light:#3a3e8f;--navy-pale:#c8cadf;
+  --gold:#b8933f;--gold-light:#d4af6a;--gold-pale:#f0e4c4;
+  --text:#2a2d1e;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden;}
+
+/* NAV */
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 48px;border-bottom:1px solid rgba(28,31,90,.1);background:rgba(245,240,232,.96);backdrop-filter:blur(10px);position:sticky;top:0;z-index:100;}
+.nav-left{display:flex;align-items:center;gap:18px;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-logo img{width:36px;height:36px;object-fit:contain;}
+.nav-logo span{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:var(--navy);}
+.nav-back{display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:500;color:var(--navy);opacity:.45;text-decoration:none;transition:opacity .2s;}
+.nav-back:hover{opacity:.8;}
+.nav-back svg{width:12px;height:12px;}
+.nav-sep{width:1px;height:20px;background:rgba(28,31,90,.15);}
+.nav-section{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);opacity:.9;}
+.nav-right{display:flex;align-items:center;gap:20px;}
+.nav-link{font-size:12px;font-weight:500;color:var(--navy);opacity:.5;text-decoration:none;transition:opacity .2s;}
+.nav-link:hover{opacity:1;}
+.nav-cta{font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);background:var(--gold-pale);border:1px solid rgba(184,147,63,.3);padding:8px 18px;border-radius:3px;text-decoration:none;transition:all .25s;}
+.nav-cta:hover{background:var(--gold);color:white;}
+
+/* HERO */
+.hero{padding:80px 48px 64px;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.hero-tag{font-size:10.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block;}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,68px);font-weight:700;color:var(--navy);line-height:1.02;margin-bottom:18px;}
+.hero-title em{font-style:italic;font-weight:300;color:var(--navy-light);}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,2vw,20px);font-weight:300;color:var(--navy);opacity:.55;line-height:1.6;margin-bottom:32px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:white;font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:13px 24px;border-radius:3px;text-decoration:none;transition:all .25s;}
+.btn-primary:hover{background:var(--navy-light);transform:translateY(-1px);}
+.btn-primary svg{width:13px;height:13px;}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;color:var(--navy);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:13px 24px;border:1px solid rgba(28,31,90,.2);border-radius:3px;text-decoration:none;transition:all .25s;}
+.btn-secondary:hover{border-color:var(--navy);background:rgba(28,31,90,.04);}
+.hero-visual{position:relative;}
+.hero-photo{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top center;border-radius:4px;display:block;filter:sepia(8%) saturate(.9);}
+.hero-photo-frame{position:relative;max-width:380px;margin-left:auto;}
+.hero-photo-frame::before{content:'';position:absolute;inset:-10px;border:1px solid rgba(184,147,63,.3);border-radius:4px;pointer-events:none;z-index:-1;}
+.hero-photo-frame::after{content:'';position:absolute;top:16px;left:16px;right:-16px;bottom:-16px;background:var(--cream-dark);border-radius:4px;z-index:-2;}
+.hero-stat-badge{position:absolute;bottom:-20px;left:-20px;background:var(--navy);color:white;padding:16px 20px;border-radius:4px;box-shadow:0 8px 32px rgba(28,31,90,.2);}
+.hero-stat-badge strong{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--gold-light);display:block;}
+.hero-stat-badge span{font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.06em;}
+
+/* STAGES */
+.stages-section{background:var(--navy);padding:72px 48px;position:relative;overflow:hidden;}
+.stages-section::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;}
+.stages-header{text-align:center;margin-bottom:52px;position:relative;z-index:2;}
+.stages-eyebrow{font-size:10.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:block;}
+.stages-title{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,42px);font-weight:700;color:var(--cream);line-height:1.1;}
+.stages-title em{font-style:italic;font-weight:300;color:var(--navy-pale);}
+.stages-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;max-width:1100px;margin:0 auto;position:relative;z-index:2;}
+.stage-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 28px;cursor:pointer;transition:all .35s;text-decoration:none;display:block;position:relative;overflow:hidden;}
+.stage-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--gold),var(--gold-light));transform:scaleX(0);transform-origin:left;transition:transform .4s;}
+.stage-card:hover,.stage-card.active{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16);}
+.stage-card:hover::before,.stage-card.active::before{transform:scaleX(1);}
+.stage-num{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;color:rgba(255,255,255,.06);line-height:1;margin-bottom:12px;transition:color .3s;}
+.stage-card:hover .stage-num,.stage-card.active .stage-num{color:rgba(184,147,63,.2);}
+.stage-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--cream);margin-bottom:8px;}
+.stage-years{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);opacity:.7;margin-bottom:14px;}
+.stage-subjects{list-style:none;display:flex;flex-direction:column;gap:5px;}
+.stage-subjects li{font-size:12.5px;color:rgba(245,240,232,.5);display:flex;align-items:center;gap:7px;}
+.stage-subjects li::before{content:'';width:12px;height:1px;background:var(--gold-light);opacity:.5;flex-shrink:0;}
+
+/* UNIVERSITY BANNER */
+.uni-banner{background:var(--cream-dark);border-top:1px solid rgba(28,31,90,.08);border-bottom:1px solid rgba(28,31,90,.08);}
+.uni-banner-inner{max-width:1100px;margin:0 auto;padding:48px;display:grid;grid-template-columns:1fr auto 1fr;gap:48px;align-items:center;}
+.uni-divider{width:1px;background:rgba(28,31,90,.12);align-self:stretch;}
+.uni-block{display:flex;flex-direction:column;}
+.uni-tag{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+.uni-name{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.5vw,28px);font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:10px;}
+.uni-desc{font-size:13px;color:var(--navy);opacity:.55;line-height:1.7;margin-bottom:16px;}
+.uni-subjects-wrap{display:flex;flex-wrap:wrap;gap:6px;}
+.uni-subject{font-size:11.5px;font-weight:500;color:var(--navy);background:rgba(28,31,90,.06);border:1px solid rgba(28,31,90,.1);padding:4px 12px;border-radius:2px;transition:all .2s;}
+.uni-subject:hover{background:var(--navy);color:white;}
+
+/* SUBJECTS TABLE */
+.table-section{padding:72px 48px;max-width:1100px;margin:0 auto;}
+.section-eyebrow{font-size:10.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:block;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3vw,38px);font-weight:700;color:var(--navy);line-height:1.1;margin-bottom:8px;}
+.section-title em{font-style:italic;font-weight:300;color:var(--navy-light);}
+.section-sub{font-size:14px;color:var(--navy);opacity:.5;margin-bottom:40px;line-height:1.7;}
+.table-placeholder{border:1.5px dashed rgba(28,31,90,.2);border-radius:6px;padding:48px 32px;text-align:center;background:rgba(28,31,90,.02);}
+.table-placeholder-icon{font-size:32px;margin-bottom:16px;display:block;opacity:.4;}
+.table-placeholder-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--navy);opacity:.5;margin-bottom:8px;}
+.table-placeholder-sub{font-size:13px;color:var(--navy);opacity:.35;}
+
+/* TÉCNICAS */
+.tecnicas-section{padding:72px 48px;max-width:1100px;margin:0 auto;}
+.tecnicas-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.tecnicas-tag{font-size:10.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:block;}
+.tecnicas-title{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.2vw,40px);font-weight:700;color:var(--navy);line-height:1.1;margin-bottom:16px;}
+.tecnicas-title em{font-style:italic;font-weight:300;color:var(--navy-light);}
+.tecnicas-desc{font-size:14.5px;color:var(--navy);opacity:.6;line-height:1.8;margin-bottom:24px;}
+.tecnicas-note{display:flex;align-items:flex-start;gap:12px;background:rgba(184,147,63,.08);border:1px solid rgba(184,147,63,.2);border-radius:6px;padding:16px 20px;}
+.tecnicas-note-icon{font-size:18px;flex-shrink:0;}
+.tecnicas-note p{font-size:13px;color:var(--navy);opacity:.65;line-height:1.65;}
+.tecnicas-note strong{color:var(--gold);opacity:1;}
+.tecnicas-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.tec-card{background:white;border:1px solid rgba(28,31,90,.08);border-radius:6px;padding:24px 20px;transition:all .3s;}
+.tec-card:hover{border-color:rgba(184,147,63,.3);transform:translateY(-2px);box-shadow:0 8px 28px rgba(28,31,90,.08);}
+.tec-card-icon{font-size:24px;margin-bottom:12px;display:block;}
+.tec-card h4{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.tec-card p{font-size:12.5px;color:var(--navy);opacity:.5;line-height:1.65;}
+.opos-card{grid-column:1/-1;background:var(--navy);border-radius:6px;padding:24px 24px;display:flex;align-items:center;gap:20px;}
+.opos-card-icon{font-size:32px;flex-shrink:0;}
+.opos-card h4{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700;color:var(--cream);margin-bottom:6px;}
+.opos-card p{font-size:13px;color:rgba(245,240,232,.5);line-height:1.65;}
+
+/* WHEEL */
+.wheel-wrap{position:relative;width:min(580px,90vw);height:min(580px,90vw);margin:0 auto;}
+.wheel-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(160px,27vw);height:min(160px,27vw);border-radius:50%;background:var(--navy);border:2px solid rgba(184,147,63,.4);display:flex;align-items:center;justify-content:center;z-index:3;box-shadow:0 0 0 8px rgba(28,31,90,.06),0 8px 40px rgba(28,31,90,.18);}
+.wheel-center-inner{text-align:center;padding:8px;}
+.wheel-center-icon{font-size:clamp(18px,3vw,26px);display:block;margin-bottom:4px;}
+.wheel-center-label{font-family:'Cormorant Garamond',serif;font-size:clamp(11px,1.8vw,14px);font-weight:700;color:var(--cream);line-height:1.3;}
+.wheel-svg-layer{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
+.wheel-item{position:absolute;transform:translate(-50%,-50%);z-index:2;}
+.wheel-item-card{width:clamp(120px,20vw,148px);background:white;border:1px solid rgba(28,31,90,.1);border-radius:6px;padding:14px 12px;transition:all .35s;cursor:default;box-shadow:0 4px 16px rgba(28,31,90,.07);}
+.wheel-item-card:hover{border-color:rgba(184,147,63,.45);transform:scale(1.06);box-shadow:0 8px 28px rgba(28,31,90,.13);}
+.wheel-item-icon{font-size:18px;display:block;margin-bottom:7px;}
+.wheel-item-card strong{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:700;color:var(--navy);display:block;margin-bottom:4px;}
+.wheel-item-card p{font-size:11px;color:var(--navy);opacity:.5;line-height:1.55;}
+.wheel-dot{position:absolute;width:9px;height:9px;border-radius:50%;background:var(--gold);border:2px solid white;transform:translate(-50%,-50%);z-index:4;transition:all .3s;pointer-events:none;}
+@media(max-width:600px){
+  .wheel-wrap{width:100%;height:auto;padding:20px 0;}
+  .wheel-svg-layer,.wheel-center,.wheel-dot{display:none;}
+  .wheel-item{position:static!important;transform:none!important;display:inline-block;margin:8px;}
+}
+
+/* YOUTUBE */
+.youtube-section{background:var(--cream-dark);border-top:1px solid rgba(28,31,90,.08);border-bottom:1px solid rgba(28,31,90,.08);padding:72px 48px;}
+.youtube-inner{max-width:960px;margin:0 auto;}
+.youtube-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;gap:24px;flex-wrap:wrap;}
+.youtube-title-wrap .section-eyebrow{margin-bottom:8px;}
+.youtube-title-wrap .section-title{margin-bottom:0;}
+.youtube-desc{font-size:14px;color:var(--navy);opacity:.5;max-width:380px;line-height:1.7;}
+.youtube-embed{border-radius:6px;overflow:hidden;position:relative;aspect-ratio:16/9;background:var(--navy);}
+.youtube-embed iframe{width:100%;height:100%;border:0;display:block;}
+.youtube-channel-note{margin-top:16px;text-align:center;font-size:12.5px;color:var(--navy);opacity:.4;}
+.youtube-channel-note a{color:var(--gold);text-decoration:none;}
+
+/* MODALIDADES */
+.modalidades-section{padding:72px 48px;max-width:1100px;margin:0 auto;}
+.mod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
+.mod-card{background:white;border:1px solid rgba(28,31,90,.08);border-radius:6px;padding:32px 26px;text-align:center;transition:all .3s;}
+.mod-card:hover{border-color:rgba(28,31,90,.2);transform:translateY(-3px);box-shadow:0 12px 36px rgba(28,31,90,.08);}
+.mod-icon{font-size:36px;margin-bottom:16px;display:block;}
+.mod-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.mod-desc{font-size:13px;color:var(--navy);opacity:.5;line-height:1.7;}
+
+/* CONTACT */
+.contact-section{background:var(--navy);padding:80px 48px;position:relative;overflow:hidden;}
+.contact-section::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;}
+.contact-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;position:relative;z-index:2;}
+.contact-title{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:700;color:var(--cream);line-height:1.1;margin-bottom:16px;}
+.contact-title em{font-style:italic;font-weight:300;color:var(--navy-pale);}
+.contact-desc{font-size:14px;color:rgba(245,240,232,.5);line-height:1.8;margin-bottom:28px;}
+.contact-items{display:flex;flex-direction:column;gap:14px;}
+.contact-item{display:flex;align-items:center;gap:12px;text-decoration:none;color:rgba(245,240,232,.65);font-size:14px;transition:color .2s;}
+.contact-item:hover{color:var(--cream);}
+.contact-item svg{width:16px;height:16px;stroke:var(--gold);flex-shrink:0;}
+.contact-form{display:flex;flex-direction:column;gap:14px;}
+.form-field{display:flex;flex-direction:column;gap:6px;}
+.form-field label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,240,232,.4);}
+.form-field input,.form-field textarea,.form-field select{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:3px;padding:12px 16px;font-family:'Raleway',sans-serif;font-size:14px;color:var(--cream);outline:none;transition:border-color .25s;width:100%;}
+.form-field input::placeholder,.form-field textarea::placeholder{color:rgba(245,240,232,.25);}
+.form-field input:focus,.form-field textarea:focus,.form-field select:focus{border-color:rgba(184,147,63,.5);}
+.form-field select option{background:var(--navy-mid);color:var(--cream);}
+.form-field textarea{resize:vertical;min-height:100px;}
+.form-submit{background:var(--gold);color:white;font-family:'Raleway',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:14px 28px;border:none;border-radius:3px;cursor:pointer;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:8px;}
+.form-submit:hover{background:var(--gold-light);transform:translateY(-1px);}
+.form-submit svg{width:14px;height:14px;}
+
+/* FOOTER */
+footer{background:#141636;padding:24px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+footer p{font-size:11px;color:rgba(255,255,255,.2);}
+footer a{color:rgba(255,255,255,.35);text-decoration:none;font-size:11px;transition:color .2s;}
+footer a:hover{color:rgba(255,255,255,.7);}
+
+/* FLOAT WA */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:999;width:52px;height:52px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);text-decoration:none;transition:transform .25s;}
+.wa-float:hover{transform:scale(1.1);}
+.wa-float svg{width:24px;height:24px;}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  nav{padding:12px 20px;}
+  .hero{grid-template-columns:1fr;gap:40px;padding:48px 24px;}
+  .hero-visual{display:none;}
+  .stages-section{padding:52px 24px;}
+  .stages-grid{grid-template-columns:1fr 1fr;}
+  .uni-banner-inner{grid-template-columns:1fr;gap:28px;padding:36px 24px;}
+  .uni-divider{display:none;}
+  .table-section{padding:52px 24px;}
+  .specs-section{padding:52px 24px;}
+  .specs-grid{grid-template-columns:1fr 1fr;}
+  .tecnicas-section{padding:52px 24px;}
+  .tecnicas-inner{grid-template-columns:1fr;}
+  .youtube-section{padding:52px 24px;}
+  .modalidades-section{padding:52px 24px;}
+  .mod-grid{grid-template-columns:1fr;}
+  .contact-section{padding:52px 24px;}
+  .contact-inner{grid-template-columns:1fr;}
+  footer{padding:20px 24px;flex-direction:column;text-align:center;}
+}
+@media(max-width:600px){
+  .stages-grid{grid-template-columns:1fr;}
+  .specs-grid{grid-template-columns:1fr;}
+  .tecnicas-cards{grid-template-columns:1fr;}
+  .opos-card{grid-column:1;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <a href="index.html" class="nav-back"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Inicio</a>
+    <span class="nav-sep"></span>
+    <a href="index.html" class="nav-logo"><img src="/mnt/user-data/uploads/2023-10-12.webp" alt="CAE Minerva"><span>CAE Minerva</span></a>
+  </div>
+  <span class="nav-section">Sección Académica</span>
+  <div class="nav-right">
+    <a href="gabinete.html" class="nav-link">Sección Pedagógica</a>
+    <a href="#contacto" class="nav-cta">Pedir información</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio" style="position:relative;">
+  <div style="position:absolute;inset:0;background-image:url('/mnt/user-data/uploads/WhatsApp_Image_2026-02-24_at_02_14_29__1_.jpeg');background-size:cover;background-position:center top;opacity:.08;pointer-events:none;border-radius:0;"></div>
+  <div class="hero-text">
+    <span class="hero-tag">Sección Académica · CAE Minerva · Oviedo</span>
+    <h1 class="hero-title">Clases<br>particulares<br><em>en Oviedo</em></h1>
+    <p class="hero-sub">Apoyo académico personalizado para todas las etapas educativas. De Primaria a la Universidad.</p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">Pedir información <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="https://wa.me/34614122220?text=Hola%2C%20me%20gustar%C3%ADa%20información%20sobre%20las%20clases%20particulares." target="_blank" rel="noopener" class="btn-secondary">WhatsApp</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-photo-frame">
+      <img src="/mnt/user-data/uploads/WhatsApp_Image_2026-02-24_at_02_13_51.jpeg" alt="Director académico CAE Minerva" class="hero-photo" width="380">
+      <div class="hero-stat-badge">
+        <strong>Uniovi<br>+ EPI</strong>
+        <span>Especialistas en<br>ingeniería y ciencias</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAGES -->
+<section class="stages-section" id="etapas">
+  <div class="stages-header">
+    <span class="stages-eyebrow">Por etapa educativa</span>
+    <h2 class="stages-title">¿En qué etapa <em>está tu alumno?</em></h2>
+  </div>
+  <div class="stages-grid">
+    <a href="#primaria" class="stage-card" id="tab-primaria">
+      <div class="stage-num">01</div>
+      <div class="stage-name">Primaria</div>
+      <div class="stage-years">6 – 12 años</div>
+      <ul class="stage-subjects">
+        <li>Matemáticas y Lengua</li>
+        <li>Hábitos de estudio</li>
+        <li>Lectoescritura y comprensión</li>
+        <li>Apoyo escolar general</li>
+      </ul>
+    </a>
+    <a href="#eso" class="stage-card" id="tab-eso">
+      <div class="stage-num">02</div>
+      <div class="stage-name">ESO</div>
+      <div class="stage-years">12 – 16 años</div>
+      <ul class="stage-subjects">
+        <li>Matemáticas y Física</li>
+        <li>Química y Biología</li>
+        <li>Inglés y Lengua</li>
+        <li>Geografía e Historia</li>
+      </ul>
+    </a>
+    <a href="#bachillerato" class="stage-card" id="tab-bach">
+      <div class="stage-num">03</div>
+      <div class="stage-name">Bachillerato</div>
+      <div class="stage-years">16 – 18 años · EBAU</div>
+      <ul class="stage-subjects">
+        <li>Matemáticas II y Física</li>
+        <li>Química y Biología</li>
+        <li>Preparación EBAU Asturias</li>
+        <li>Historia y Filosofía</li>
+      </ul>
+    </a>
+    <a href="#universidad" class="stage-card" id="tab-uni">
+      <div class="stage-num">04</div>
+      <div class="stage-name">Universidad</div>
+      <div class="stage-years">Uniovi · EPI Gijón</div>
+      <ul class="stage-subjects">
+        <li>Cálculo y Álgebra</li>
+        <li>Física e Ingeniería</li>
+        <li>Programación y Estadística</li>
+        <li>Asignaturas de primer ciclo</li>
+      </ul>
+    </a>
+  </div>
+</section>
+
+<!-- UNIVERSITY BANNER -->
+<div class="uni-banner" id="universidad">
+  <div class="uni-banner-inner">
+    <div class="uni-block">
+      <span class="uni-tag">Universidad de Oviedo</span>
+      <h3 class="uni-name">Apoyo universitario<br>en todas las facultades</h3>
+      <p class="uni-desc">Refuerzo especializado para los primeros cursos universitarios en Oviedo. Asignaturas troncales de ciencias, ingenierías y sociales.</p>
+      <div class="uni-subjects-wrap">
+        <span class="uni-subject">Cálculo I y II</span>
+        <span class="uni-subject">Álgebra Lineal</span>
+        <span class="uni-subject">Estadística</span>
+        <span class="uni-subject">Física I y II</span>
+        <span class="uni-subject">Química General</span>
+        <span class="uni-subject">Programación</span>
+      </div>
+    </div>
+    <div class="uni-divider"></div>
+    <div class="uni-block">
+      <span class="uni-tag">EPI Gijón · Escuela Politécnica</span>
+      <h3 class="uni-name">Especialistas en<br>ingeniería y politécnica</h3>
+      <p class="uni-desc">Dominio profundo del temario de la EPI Gijón. Profesores con formación en ingeniería que conocen el nivel y ritmo de cada asignatura.</p>
+      <div class="uni-subjects-wrap">
+        <span class="uni-subject">Resistencia de Materiales</span>
+        <span class="uni-subject">Termodinámica</span>
+        <span class="uni-subject">Electrónica</span>
+        <span class="uni-subject">Mecánica de Fluidos</span>
+        <span class="uni-subject">Automatización</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUBJECTS TABLE -->
+<section class="table-section" id="asignaturas">
+  <span class="section-eyebrow">Grados y asignaturas</span>
+  <h2 class="section-title">Tabla de materias<br><em>por grado y semestre</em></h2>
+  <p class="section-sub">Consulta todas las asignaturas que cubrimos en cada grado universitario, organizadas por semestre y curso.</p>
+  <div class="table-placeholder">
+    <span class="table-placeholder-icon">📋</span>
+    <div class="table-placeholder-title">Tabla de grados y asignaturas</div>
+    <div class="table-placeholder-sub">Los datos de grados, asignaturas y semestres se incorporarán próximamente.<br>Contáctanos para consultar tu asignatura específica.</div>
+  </div>
+</section>
+
+<!-- TÉCNICAS DE ESTUDIO -->
+<section class="tecnicas-section" id="tecnicas">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:48px;">
+      <span class="tecnicas-tag">Técnicas de estudio · Oposiciones</span>
+      <h2 class="tecnicas-title">Aprender a<br><em>aprender mejor</em></h2>
+      <p class="tecnicas-desc" style="max-width:580px;margin:14px auto 0;">Las técnicas de estudio son la base del rendimiento académico sostenible. En CAE Minerva las trabajamos desde Primaria hasta la preparación de oposiciones.</p>
+    </div>
+
+    <!-- WHEEL -->
+    <div class="wheel-wrap" id="tecnicas-wheel">
+      <svg class="wheel-svg-layer" viewBox="0 0 580 580" xmlns="http://www.w3.org/2000/svg" id="wheel-svg">
+        <circle cx="290" cy="290" r="80" fill="none" stroke="rgba(184,147,63,.2)" stroke-width="1.5"/>
+        <circle cx="290" cy="290" r="210" fill="none" stroke="rgba(184,147,63,.07)" stroke-width="1" stroke-dasharray="5 9"/>
+        <!-- spokes generated by JS -->
+      </svg>
+      <div class="wheel-center">
+        <div class="wheel-center-inner">
+          <span class="wheel-center-icon">🎓</span>
+          <span class="wheel-center-label">Técnicas<br>de estudio</span>
+        </div>
+      </div>
+      <!-- items positioned by JS -->
+      <div class="wheel-item" data-i="0"><div class="wheel-item-card"><span class="wheel-item-icon">🗂️</span><strong>Organización</strong><p>Horarios, planificación y gestión de varias asignaturas a la vez.</p></div></div>
+      <div class="wheel-item" data-i="1"><div class="wheel-item-card"><span class="wheel-item-icon">🧩</span><strong>Memoria</strong><p>Mapas conceptuales, repetición espaciada y técnicas de recuperación.</p></div></div>
+      <div class="wheel-item" data-i="2"><div class="wheel-item-card"><span class="wheel-item-icon">🎯</span><strong>Concentración</strong><p>Atención sostenida, reducción de la procrastinación y rendimiento en examen.</p></div></div>
+      <div class="wheel-item" data-i="3"><div class="wheel-item-card"><span class="wheel-item-icon">📖</span><strong>Comprensión</strong><p>Estrategias para extraer lo esencial y procesar textos complejos con eficacia.</p></div></div>
+      <div class="wheel-item" data-i="4"><div class="wheel-item-card"><span class="wheel-item-icon">📜</span><strong>Oposiciones</strong><p>Temarios extensos, estudio intensivo, gestión del estrés y simulacros.</p></div></div>
+    </div>
+    <script>
+    (function(){
+      var wrap = document.getElementById('tecnicas-wheel');
+      if(!wrap) return;
+      var items = wrap.querySelectorAll('.wheel-item');
+      var svg = document.getElementById('wheel-svg');
+      var n = items.length;
+      var r = 210; // radius in SVG units (580px viewBox)
+      var cx = 290, cy = 290;
+      function posItem(item, i){
+        var angle = (Math.PI * 2 / n) * i - Math.PI / 2;
+        var px = cx + r * Math.cos(angle);
+        var py = cy + r * Math.sin(angle);
+        // Convert SVG coords to % of wrap size
+        var pct_x = px / 580 * 100;
+        var pct_y = py / 580 * 100;
+        item.style.left = pct_x + '%';
+        item.style.top = pct_y + '%';
+        // Draw spoke
+        var line = document.createElementNS('http://www.w3.org/2000/svg','line');
+        line.setAttribute('x1', cx);
+        line.setAttribute('y1', cy);
+        var inner_r = 80;
+        line.setAttribute('x2', cx + inner_r * Math.cos(angle));
+        line.setAttribute('y2', cy + inner_r * Math.sin(angle));
+        line.setAttribute('stroke','rgba(184,147,63,.3)');
+        line.setAttribute('stroke-width','1');
+        svg.appendChild(line);
+        // Draw outer spoke segment
+        var line2 = document.createElementNS('http://www.w3.org/2000/svg','line');
+        line2.setAttribute('x1', cx + (inner_r+4) * Math.cos(angle));
+        line2.setAttribute('y1', cy + (inner_r+4) * Math.sin(angle));
+        line2.setAttribute('x2', cx + (r-10) * Math.cos(angle));
+        line2.setAttribute('y2', cy + (r-10) * Math.sin(angle));
+        line2.setAttribute('stroke','rgba(184,147,63,.2)');
+        line2.setAttribute('stroke-width','1');
+        line2.setAttribute('stroke-dasharray','3 5');
+        svg.appendChild(line2);
+        // Draw dot
+        var dot = document.createElement('div');
+        dot.className = 'wheel-dot';
+        dot.style.left = pct_x + '%';
+        dot.style.top = pct_y + '%';
+        wrap.appendChild(dot);
+      }
+      items.forEach(function(item, i){ posItem(item, i); });
+    })();
+    </script>
+
+    <div class="tecnicas-note" style="max-width:640px;margin:36px auto 0;">
+      <span class="tecnicas-note-icon">🔗</span>
+      <p>Las técnicas de estudio las imparte el <strong>equipo del gabinete psicopedagógico</strong>, adaptadas al perfil de aprendizaje de cada alumno.</p>
+    </div>
+  </div>
+</section>
+
+<!-- YOUTUBE -->
+<section class="youtube-section" id="youtube">
+  <div class="youtube-inner">
+    <div class="youtube-header">
+      <div class="youtube-title-wrap">
+        <span class="section-eyebrow">Canal de YouTube</span>
+        <h2 class="section-title">Recursos y<br><em>vídeos didácticos</em></h2>
+      </div>
+      <p class="youtube-desc">Vídeos explicativos sobre las materias que más cuesta. Próximamente disponibles en nuestro canal.</p>
+    </div>
+    <div class="youtube-embed">
+      <iframe
+        src="https://www.youtube.com/@CAEMinerva"
+        title="Canal de YouTube de CAE Minerva"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+    <p class="youtube-channel-note">Canal aún en construcción · <a href="https://www.youtube.com/@CAEMinerva" target="_blank" rel="noopener">Visitar canal y suscribirse</a></p>
+  </div>
+</section>
+
+<!-- MODALIDADES -->
+<section class="modalidades-section" id="modalidades">
+  <span class="section-eyebrow">Cómo trabajamos</span>
+  <h2 class="section-title">Modalidades<br><em>de clase</em></h2>
+  <div class="mod-grid">
+    <div class="mod-card">
+      <span class="mod-icon">🏫</span>
+      <div class="mod-name">Presencial</div>
+      <p class="mod-desc">Clases en nuestro centro de Oviedo, Calle Quintana 15. Ambiente tranquilo, material disponible y profesores en persona.</p>
+    </div>
+    <div class="mod-card">
+      <span class="mod-icon">💻</span>
+      <div class="mod-name">Online</div>
+      <p class="mod-desc">Clases por videoconferencia con pizarra virtual. Misma calidad y seguimiento que en presencial, sin desplazamiento.</p>
+    </div>
+    <div class="mod-card">
+      <span class="mod-icon">🔄</span>
+      <div class="mod-name">Híbrido</div>
+      <p class="mod-desc">Combina presencial y online según el horario y la semana. Máxima flexibilidad sin perder continuidad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contacto">
+  <div class="contact-inner">
+    <div>
+      <h2 class="contact-title">¿Empezamos<br><em>a trabajar juntos?</em></h2>
+      <p class="contact-desc">Cuéntanos en qué asignatura o etapa necesitas apoyo y nos ponemos en contacto contigo en menos de 24 horas.</p>
+      <div class="contact-items">
+        <a href="tel:+34614122220" class="contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.9 2.18 2 2 0 012.91 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>614 122 220</a>
+        <a href="/cdn-cgi/l/email-protection#a9eae8ecc4c0c7ccdbdfc89b9ae9cec4c8c0c587cac6c4" class="contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="__cf_email__" data-cfemail="6a292b2f0703040f181c0b58592a0d070b030644090507">[email&#160;protected]</span></a>
+        <a href="https://wa.me/34614122220" target="_blank" rel="noopener" class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="#b8933f" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>WhatsApp directo</a>
+        <span class="contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Calle Quintana 15, 1º Of. 1 · Oviedo</span>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="return false;">
+      <div class="form-field">
+        <label>Nombre</label>
+        <input type="text" placeholder="Tu nombre">
+      </div>
+      <div class="form-field">
+        <label>Teléfono o email</label>
+        <input type="text" placeholder="Para que podamos contactarte">
+      </div>
+      <div class="form-field">
+        <label>Etapa o asignatura</label>
+        <select>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option>Primaria</option>
+          <option>ESO</option>
+          <option>Bachillerato / EBAU</option>
+          <option>Universidad de Oviedo</option>
+          <option>EPI Gijón</option>
+          <option>Técnicas de estudio</option>
+          <option>Oposiciones</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Mensaje (opcional)</label>
+        <textarea placeholder="Cuéntanos un poco más sobre lo que necesitas..."></textarea>
+      </div>
+      <button class="form-submit" type="submit">Enviar mensaje <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 CAE Minerva · Sección Académica · Calle Quintana 15, Oviedo · clases particulares Oviedo · academia Oviedo · Universidad de Oviedo · EPI Gijón</p>
+  <div style="display:flex;gap:20px;"><a href="index.html">Inicio</a><a href="gabinete.html">Sección Pedagógica</a></div>
+</footer>
+
+<a href="https://wa.me/34614122220?text=Hola%2C%20quiero%20información%20sobre%20las%20clases%20particulares." target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6
